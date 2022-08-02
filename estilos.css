@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -----------------------------------GLOBALES---------------------------------------------  */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #00171f;
+  color: white;
+}
+nav {
+}
+a {
+  text-decoration: none;
+  background-color: #003459;
+  padding: 0.3rem;
+  color: white;
+  border-radius: 0.2rem;
+}
+p {
+  /* text-align: justify; */
+}
+footer {
+  background-color: #003459;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  color: white;
+}
+/* -----------------------------------CLASES---------------------------------------------  */
+.contenedor {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.informacion {
+  border: 1px solid black;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+}
+.texto-info:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.texto-info h4 {
+  margin-bottom: 1rem;
+}
+.imagen-info {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+.imagen-info img {
+  width: 100%;
+  object-fit: cover;
+}
+.titulo {
+  margin-top: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid #007ea7;
+  padding-top: 1rem;
+  color: #00171f;
+}
+.formulario {
+  height: 8rem;
+  border: 1px solid black;
+}
+.navegador-principal {
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-around;
+}
+.formularios {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  row-gap: 1rem;
+}
