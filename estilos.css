@@ -90,12 +90,18 @@ footer {
   column-gap: 1rem;
 
 }
+.boton-form{
+  margin-top: 1rem;
+}
 .campo{
  display: block;
   text-align: center;
   padding: 0rem 0rem 1rem 0rem;
  }
  .cada-formulario{
+  border: 2px solid black;
+  border-color:#457b9d ;
+  border-radius: 0.5rem;
  }
  label{
   flex-basis: 3rem;
@@ -107,6 +113,7 @@ footer {
  input{
   border-radius: 0.3rem;
   max-width: 30%;
+  border-color:#457b9d;
  }
 
  .galeria{
@@ -122,7 +129,6 @@ footer {
   object-fit: cover;
   
  }
-
  .cada-foto:nth-child(1){
   grid-column-start: 1;
   grid-column-end: 4;

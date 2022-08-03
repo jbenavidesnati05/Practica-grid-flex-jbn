@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica Grid & flex</title>
     <link rel="stylesheet" href="estilos.css" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -38,21 +40,25 @@
         <div class="titulo contenedor">
             <h2>Convertidores</h2>
         </div>
+      <!-- F ===> C    -->
       <div class="formularios contenedor">
         <div class="cada-formulario">
-          <form class="formulario contenedor">
+          <div class="formulario contenedor">
             <fieldset>
               <legend>Temperatura</legend>
               <div class="campo">
                 <label for="unidad">fahrenheit</label>
-                <input type="number" name="unidad" id="unidad" />
+                <input type="number" name="unidad" id="tempF" />
               </div>
               <div class="campo">
                 <label for="">Celsius</label>
-                <input type="number" name="" id="" disabled />
+                <input type="text" id="tempC" disabled>
+                <div class="boton-form">
+                  <button class="btn btn-primary" type="submit" onclick="converFC()">Convertir</button>
+                </div>
               </div>
             </fieldset>
-          </form>
+          </div>
         </div>
         <div class="cada-formulario">
           <form class="formulario contenedor">
@@ -217,5 +223,6 @@
     <footer>
       <p>Derechos reservados jbenavidesnati05@gmail.com</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
