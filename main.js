@@ -8,3 +8,11 @@ function converFC(){
         document.getElementById("tempC").value = `${tempC.toFixed(1)} °C`;
     }
 }
+
+function converCK(){
+    let tempCe = parseInt(document.getElementById("tempCe").value);
+    console.log(tempCe);
+    let tempK = (tempCe + 273);
+
+    document.getElementById("tempK").value =tempK;
+}
